@@ -439,7 +439,7 @@ export default Kapsule({
 
         const rotAxis = new THREE.Vector3(0, 1, 0);
         new TWEEN.Tween({ rot: Math.PI * 2 + Math.PI / 3 })
-          .to({ rot: Math.PI / 3 }, 1200)
+          .to({ rot: Math.PI / 2.3 }, 1200)
           .easing(TWEEN.Easing.Quintic.Out)
           .onUpdate(({ rot }) =>
             state.scene.setRotationFromAxisAngle(rotAxis, rot)
